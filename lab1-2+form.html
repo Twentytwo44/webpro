@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+p{
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-input{
+  border: 1px solid #ccc;
+  width: 400px;
+  height:600px;
+  display: flex;
+  flex-direction: column;
+ 
+  
+  
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.input-text{
+  border: 1px solid #ccc;
+  width: auto;
+  height: 48px;
+  border-radius: 5px;
+  margin: 5px;
+
+}
+.input-date{
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 195px;
+  height: 48px;
+  border-radius: 5px;
+
+}
+.month-label
+{
+  display: block;
+}
+.d-y-label
+{
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80px;
+  height: 44px;
+  font-size: 14px;
+}
+button{
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #1ED760;
+  height: 56px;
+  border: 1px solid #1ED760
+}
+.f1{
+  font-size: 11px;
+  display: inline-block;
+  
+}
+.text{
+  color: #1db954;
+  text-decoration: none;
+}
+.radio-button{
+  
+  font-size: 14px;
+
+}
+.m-l{
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.select{
+  padding: 1px 2px;
+}
+.ch-po{
+  
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif ;
+  display: inline-block;
+}
+.radio-1{
+  
+  margin-right: 5px;
+}
+</style>
+  <title>Document</title>
+</head>
+<body>
+<div class="form">
+   
+  <form class="form-input" action="/action_page.php">
+    <p>Sign up with your email address</p>
+    
+     <input class="input-text" type="text" id="email" name="email" placeholder="Email">
+
+   
+    <input class="input-text" type="text" id="cf-email" name="cf-email" placeholder="Confirm email">
+
+    <input class="input-text" type="password" id="password" name="password" placeholder="Password">
+    <input class="input-text" type="text" id="st"  name="st" placeholder="What should we call you?">
+    <div>
+      <label class="m-l" for="month">Date of birth:</label>
+
+  </div>
+  <div class="select">
+    <select class="input-date" name="month" id="month">
+      <option value="month">Month</option>
+      <option value="jan">Jan</option>
+      <option value="feb">Feb</option>
+      <option value="mar">Mar</option>
+      <option value="apr">Apr</option>
+      <option value="may">May</option>
+      <option value="jun">Jun</option>
+      <option value="jul">Jul</option>
+      <option value="aug">Aug</option>
+      <option value="sep">Sep</option>
+      <option value="oct">Oct</option>
+      <option value="nov">Nov</option>
+      <option value="dec">Dec</option>
+   
+    <input class="d-y-label" type="text" id="day" name="day" placeholder="Day">
+    <input class="d-y-label" type="text" id="year" name="year" placeholder="Year">
+  </div>
+
+  <div class="radio-button">
+    <input type="radio" name="gender" class="radio-1">Male</input>
+    <input type="radio" name="gender" class="radio-1">Female</input>
+    <input type="radio" name="gender" class="radio-1">Non-binary</input>
+  </div>
+  <div>
+    <input class="ch-po" type="checkbox" name="ch-po"><span style="font-size: 14px;">Share my registration data with Spothify's content providers for marketing purposes</span></input>
+
+  </div>
+
+  <div>
+  <p class="f1">By clicking on Sign up,you agree to Spotify's <span><a class="text"href="#">Terms and Conditions of Use.</a></span></p>
+  <p class="f1">To learn more about how Spotify collects,uses, shares amd protects yolur personaldata please read Spotify's <span><a class="text"href="#">Privacy Policy.</a></span></p>
+  </div>
+  <button type="submit" class="btn">SIGN UP</button>
+  </form> 
+
+</div>
+</body>
+</html>
