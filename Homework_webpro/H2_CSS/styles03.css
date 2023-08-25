@@ -1,0 +1,16 @@
+.container p a{
+    color: green;
+}
+.container p {
+    color: red;
+    font-size: 30px;
+}
+.container p ~ p{
+    color: #333;
+    font-size: 1.2em;
+}
+tr:nth-child(even){
+    background-color: black;
+    color: white;
+}
+

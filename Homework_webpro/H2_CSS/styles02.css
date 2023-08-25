@@ -1,0 +1,22 @@
+span.alert{
+    border: 1px solid black;
+}
+h2 > span{ 
+    background-color: green;
+}
+
+p ~ h2{
+    background-color: yellow;
+
+}
+h2 ~ h2 {
+    background-color: white;
+}
+
+h2 ~ p span{
+    background-color: green;
+}
+
+span ~ span{
+    background-color: red;
+}
